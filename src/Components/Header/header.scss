@@ -1,0 +1,23 @@
+@import '../../style/var.scss';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 100px 0px 100px; 
+    margin: 0 auto;
+    max-width: 1440px;
+
+    &__logo {
+        width: 210px;
+    }
+     
+    @media screen and (max-width: $bp) {
+        padding: 20px;  
+        
+        &__logo {
+            width: 145px;
+        }
+    }
+
+}

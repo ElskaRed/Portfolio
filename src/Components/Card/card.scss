@@ -1,0 +1,28 @@
+@import '../../style/var.scss';
+
+.card {
+    height: 340px;
+    border-radius: 10px;
+    position: relative;
+
+    @media screen and (max-width: $bp) {
+        height: 255px;    
+    }
+
+    &__img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    &__title {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        color: white;
+        font-size: 1.1em;
+        width: 50%;
+
+    }
+}

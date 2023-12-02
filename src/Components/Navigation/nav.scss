@@ -1,0 +1,26 @@
+@import '../../style/var.scss';
+
+.navigation {
+    display: flex;
+    gap: 57px;
+    
+    &--home,
+    &--about {
+        color: $orange;
+        text-decoration: none;
+        font-size: 1.5em;
+
+        &.active {
+            text-decoration: underline;
+        }
+    }
+
+    @media screen and (max-width: $bp) {
+        gap: 26px;
+
+        &--home,
+        &--about {
+            font-size: 0.75em;
+        }
+    }
+}

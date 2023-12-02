@@ -1,0 +1,111 @@
+@import '../../style/var.scss';
+
+.fiche {
+    @include wrapper(15px);
+
+    &__details {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+.infos {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &__lieu {
+        @include flex(column, 5px);
+
+        &__title {
+            font-size: 2.25em;
+            color: $orange;
+        }
+
+        &__location {
+            font-size: 1.1em;
+            color: $orange;
+        }
+
+        &__tags {
+            @include flex(row, 10px);
+            color: white;
+            margin-top: 20px;
+        }
+    }
+
+    &__bonus {
+        @include flex(column, 15px);
+        align-items: flex-end;
+    }
+
+}
+
+.tag {
+    background-color: $orange;
+    border-radius: 10px;
+    padding: 3px 30px;
+    font-size: 0.9em;
+}
+
+.collapses {
+    @include flex(row, 76px);
+}
+
+.equiplist {
+    list-style: none;
+
+    &__line {
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width: $bp) {
+    .fiche__details {
+        margin-top: 10px;
+    }
+
+    .infos {
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 18px;
+
+        &__lieu {
+            gap: 12px; 
+            &__title {
+                font-size: 1.1em;
+            }
+
+            &__location {
+                font-size: 0.8em;
+            }
+
+            &__tags {
+                font-size: 0.62em;
+                margin-top: 0;
+                align-items: flex-start;
+                flex-wrap: wrap;
+            }
+        }
+
+        &__bonus {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+    }   
+    
+    .tag {
+        border-radius: 5px;
+    }
+
+    .collapses {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+}

@@ -1,0 +1,105 @@
+@import '../../style/var.scss';
+
+
+.collapse {
+    width: 100%;
+    overflow: hidden;
+
+    &__top {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px 10px 15px;
+        background-color: $orange;
+        border-radius: 5px;
+        color: white;
+        z-index: 1;
+
+        &__title {
+            font-size: 1.5em;
+        }
+
+        &__arrow {
+            cursor: pointer;
+            transform: rotate(0deg);
+            transition: transform 0.4s ease-in-out; //Animation de transform pour remettre la flèche à l'endroit
+        }
+
+        &__arrow.arrow-down {
+            transform: rotate(-180deg);
+            transition: transform 0.4s ease-in-out; //Animation de transform pour faire pivoter la flèche vers le bas
+        }
+    }
+
+    &__bottom {
+        background-color: #F6F6F6;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        border-radius: 5px;
+        position: relative;
+        z-index: -1;
+        margin-top: -5px;
+        opacity: 1;
+        overflow: hidden;
+        transform: translateY(-35px);
+        max-height: 0px;
+        transition: max-height 1.7s -0.8s, padding-top 0.4s 0.1s;
+        //Animation inverse du commentaire suivant
+
+        
+        &.bottom-down {
+            max-height: 1000px;
+            padding-top: 55px;
+            transition: max-height 1.7s, padding-top 0.4s;
+            //On anime max-height pour faire grandir la div qui encadre le texte, et on ajoute un padding-top nécessaire
+            //pour compenser le translateY(-35px) vers le haut, qui lui était nécessaire pour masquer ce qui était toujours apparent de la div.
+        }
+
+        &__text {
+            color: $orange;
+            font-size: 1.1em;
+            font-weight: 400;
+            line-height: 142.6%;
+            opacity: 0;
+            transform: translateY(-115%);
+            transition: transform 0.6s, opacity 0.2s 0.6s;
+            //Animation inverse du commentaire suivant
+            
+
+            &.text-down {
+                transform: translateY(0);
+                transition: transform 0.6s, opacity 0.2s;
+                opacity: 1;
+                //On anime le texte à part de la div qui grandit afin de lui donner l'effet de glissement vers le bas
+                //On ajoute un effet d'opacité qui passe de 0 à 1 car il y a un léger dépassement de base, donc ça permet de bien camoufler.
+            }
+        }
+    }
+
+    @media screen and (max-width: $bp) {
+        &__top {
+            padding: 10px;
+
+            &__arrow {
+                height: 11px;
+            }
+        }
+
+        &__text {
+            font-size: 0.75em;
+        }
+        
+    }
+}
+
+
+//Class spécifiquement utilisée dans la page FicheLogement car les font-size diffèrent dans cette condition précise, indépendamment de la taille de l'écran.
+.medium {
+    font-size: 1.1em;
+    @media screen and (max-width: $bp) {
+        font-size: 0.8em;
+    }
+}
