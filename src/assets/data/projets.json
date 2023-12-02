@@ -1,0 +1,68 @@
+[
+	{
+		"id": "c67ab8a7",
+		"title": "Ohmyfood",
+		"description": "Projet fictif : Développer l’interface d’une application qui regroupe des menus de restaurants.",
+		"focus": "Focus sur les animations et le mobile-first.",
+		"tags": [
+			"Animations Scss",
+			"Mobile-first"
+		],
+		"git": "https://github.com/ElskaRed/ohmyfood",
+		"demo": "https://elskared.github.io/ohmyfood/",
+		"image": "food-card.webp"
+	},
+	{
+		"id": "b9123946",
+		"title": "Portfolio Sophie Bluel",
+		"description": "Projet fictif : Développer l’interface d’un site web dynamique avec appels à une API pour afficher les données.",
+		"focus": "Focus sur JavaScript et les requêtes à une API.",
+		"tags": [
+			"JavaScript",
+			"Requêtes API"
+		],
+		"git": "https://github.com/ElskaRed/Portfolio_Sophie_Bluel",
+		"image": "bluel-card.webp"
+	},
+	{
+		"id": "blsdiufg",
+		"title": "Kasa",
+		"description": "Projet fictif : Développer l’interface d’une application web d’agence immobilière.",
+		"focus": "Focus sur React.",
+		"tags": [
+			"React",
+			"JSX"
+		],
+		"git": "https://github.com/ElskaRed/kasa",
+		"image": "kasa-card.webp"
+	},
+	{
+		"id": "bl9765h",
+		"title": "Portfolio Nina Carducci",
+		"description": "Projet fictif : Optimiser les performances et le référencement d’un portfolio de photographe.",
+		"focus": "Focus : Optimisation, accessibilité, SEO et référencement local.",
+		"tags": [
+			"Optimisation",
+			"Google lighthouse",
+			"WAVE",
+			"SEO",
+			"schema.org"
+		],
+		"git": "https://github.com/ElskaRed/ninacarducci",
+		"demo": "https://elskared.github.io/ninacarducci/",
+		"image": "nina-card.webp"
+	},
+	{
+		"id": "bl976td",
+		"title": "Application ArgentBank",
+		"description": "Projet fictif : Développer l’interface d’une application bancaire avec React.",
+		"focus": "Focus : Utilisation de Redux pour gérer l’état de l’application.",
+		"tags": [
+			"React",
+			"Redux"
+		],
+		"git": "https://github.com/ElskaRed/ArgentBank",
+		"image": "bank-card.webp"
+	}
+	
+]

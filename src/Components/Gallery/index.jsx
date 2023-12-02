@@ -1,22 +1,34 @@
 import './gallery.scss';
 import Card from '../Card/index';
-import logements from "../../assets/data/logements.json";
+import projets from "../../assets/data/projets.json";
 import { Link } from "react-router-dom";
-
-//Composant gallery appelé dans la page d'accueil.
+import { useState, useEffect } from 'react';
 
 const Gallery = () => {
+    const [projectImages, setProjectImages] = useState([]);
+
+    useEffect(() => {
+        const loadImage = async () => {
+            const images = await Promise.all(
+                projets.map(async (projet) => {
+                    const module = await import(`../../assets/images/${projet.image}`);
+                    return module.default;
+                })
+            );
+            setProjectImages(images);
+        };
+        loadImage();
+    }, []); 
+
     return (
         <div className="gallery">
-            {logements.map((logement) => {
-                return ( //On map les logements pour itérer sur chacun et appeler une Card qui lui correspond, qui est aussi un lien vers la page qui lui correspond.
-                    <Link key={logement.id} to={`/logement/${logement.id}`}>
-                        <Card image={logement.cover} title={logement.title} />
-                    </Link>
-                );
-            })}
+            {projets.map((projet, index) => (
+                <Link key={projet.id} to={`/project/${projet.id}`}>
+                    <Card image={projectImages[index]} title={projet.title} />
+                </Link>
+            ))}
         </div>
-    )
-}
+    );
+};
 
 export default Gallery;

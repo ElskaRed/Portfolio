@@ -1,5 +1,12 @@
 @import '../../style/var.scss';
 
-.wrapper-home {
+.home {
     @include wrapper(40px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    &__portrait {
+        max-width: 400px;
+    }
 }

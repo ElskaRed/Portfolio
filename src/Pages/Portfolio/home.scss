@@ -1,0 +1,5 @@
+@import '../../style/var.scss';
+
+.wrapper-home {
+    @include wrapper(40px);
+}

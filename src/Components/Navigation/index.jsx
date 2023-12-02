@@ -1,15 +1,14 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import './nav.scss';
-
-//Composant Navigation appelé dans le composant Header. 
-//Ici on utilise NavLink et nas Link car cela permettait de garder le lien de navigation souligné en fonction de la page active.
 
 const Navigation = () => {
     return (
          <nav className="navigation">
-            <NavLink to="/" exact="true" className="navigation--home">Accueil</NavLink>
-            <NavLink to="/about" exact="true" className="navigation--about">À propos</NavLink>
+            <NavLink to="/" exact="true" className="navigation--home">Home</NavLink>
+            <NavLink to="/about" exact="true" className="navigation--about">Profil</NavLink>
+            <NavLink to="/portfolio" exact="true" className="">Portfolio</NavLink>        
+            <Link to="https://drive.google.com/file/d/10QLK9EyBRGJ-exjfnqrDYBFZlSazzriI/view?usp=sharing" target="_blank" rel="noopener noreferrer">Mon CV</Link>
         </nav>
     )
 };
