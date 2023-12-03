@@ -7,12 +7,9 @@ $bp: 768px;
 @mixin darken {
     background-color: black;
     @include absoluteFull;
-    border-radius: 25px;
-    opacity: 0.3;
+    border-radius: 10px;
+    opacity: 0.6;
     z-index: 0;
-    @media screen and (max-width: $bp) {
-        border-radius: 10px;        
-    }
 }
 
 @mixin wrapper($bottom) {
@@ -48,18 +45,6 @@ $bp: 768px;
     left: 0;
     bottom: 0;
     right: 0;
-}
-
-@mixin arrow {
-    position: absolute;
-    top: 40%;
-    z-index: 1;
-    cursor: pointer;
-    @media screen and (max-width: $bp) {
-        height: 22px;  
-        width: 22px;  
-        top: 44%;    
-    }
 }
 
 @mixin flex($dir, $gap) {

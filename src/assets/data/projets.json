@@ -2,6 +2,7 @@
 	{
 		"id": "c67ab8a7",
 		"title": "Ohmyfood",
+		"bref": "Développer une interface agrémentée d'animations",
 		"description": "Projet fictif : Développer l’interface d’une application qui regroupe des menus de restaurants.",
 		"focus": "Focus sur les animations et le mobile-first.",
 		"tags": [
@@ -15,6 +16,7 @@
 	{
 		"id": "b9123946",
 		"title": "Portfolio Sophie Bluel",
+		"bref": "Gérer l'affichage dynamique grâce aux requêtes à une API",
 		"description": "Projet fictif : Développer l’interface d’un site web dynamique avec appels à une API pour afficher les données.",
 		"focus": "Focus sur JavaScript et les requêtes à une API.",
 		"tags": [
@@ -27,6 +29,7 @@
 	{
 		"id": "blsdiufg",
 		"title": "Kasa",
+		"bref": "Développer une application avec React",
 		"description": "Projet fictif : Développer l’interface d’une application web d’agence immobilière.",
 		"focus": "Focus sur React.",
 		"tags": [
@@ -39,6 +42,7 @@
 	{
 		"id": "bl9765h",
 		"title": "Portfolio Nina Carducci",
+		"bref": "Optimiser les performances, l'accessibilité et le SEO d'un site",
 		"description": "Projet fictif : Optimiser les performances et le référencement d’un portfolio de photographe.",
 		"focus": "Focus : Optimisation, accessibilité, SEO et référencement local.",
 		"tags": [
@@ -55,6 +59,7 @@
 	{
 		"id": "bl976td",
 		"title": "Application ArgentBank",
+		"bref": "Gérer le state d'une application avec Redux",
 		"description": "Projet fictif : Développer l’interface d’une application bancaire avec React.",
 		"focus": "Focus : Utilisation de Redux pour gérer l’état de l’application.",
 		"tags": [

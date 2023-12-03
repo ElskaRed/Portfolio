@@ -3,6 +3,8 @@ import Card from '../Card/index';
 import projets from "../../assets/data/projets.json";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Gallery = () => {
     const [projectImages, setProjectImages] = useState([]);
@@ -23,9 +25,14 @@ const Gallery = () => {
     return (
         <div className="gallery">
             {projets.map((projet, index) => (
-                <Link key={projet.id} to={`/project/${projet.id}`}>
-                    <Card image={projectImages[index]} title={projet.title} />
-                </Link>
+                <div className="card">
+                    <Link key={projet.id} to={`/project/${projet.id}`}>
+                        <Card image={projectImages[index]} title={projet.title} text={projet.bref}/>
+                    </Link>
+                    <a href={projet.git} className="card__git">
+                        <FontAwesomeIcon size="2xl" icon={faGithub} style={{ color: "#ffffff" }} />
+                    </a>
+                </div>
             ))}
         </div>
     );

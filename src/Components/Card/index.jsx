@@ -1,12 +1,14 @@
 import './card.scss';
 
-// Composant Card appelé dans le composant Gallery
-
-const Card = ({image, title}) => {
+const Card = (props) => {
     return (
         <article className="card">
-            <img src={image} alt={title} className="card__img" />
-            <h2 className="card__title">{title}</h2>
+            <img src={props.image} alt={props.title} className="card__img" />
+            <div className="card__shadow"></div>
+            <div className="card__info">
+                <h2 className="card__info__title">{props.title}</h2>
+                <p className="card__info__text">{props.text}</p>
+            </div>
         </article>
     )
 }

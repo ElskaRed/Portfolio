@@ -1,5 +1,5 @@
 import Gallery from '../../Components/Gallery';
-import './home.scss';
+import './portfolio.scss';
 
 // Page d'accueil
 

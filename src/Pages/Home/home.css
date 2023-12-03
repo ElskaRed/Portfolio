@@ -39,19 +39,7 @@
   height: 100px;
 }
 .home__portrait {
-  position: relative;
-}
-.home__portrait--img {
   width: 250px;
   box-shadow: 0px 0px 50px 11px rgba(0, 0, 0, 0.85);
   border-radius: 10px;
-}
-.home__portrait--shadow {
-  position: absolute;
-  border-radius: 10px;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  box-shadow: inset 0px 0px 23px 18px rgba(0, 0, 0, 0.9);
 }
