@@ -1,13 +1,18 @@
 .about {
   max-width: 1440px;
   margin: auto;
+  margin-top: 20px;
   margin-bottom: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-left: 100px;
   padding-right: 100px;
-  min-height: calc(100vh - 401px);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 70px;
+  align-items: flex-start;
 }
 @media screen and (max-width: 768px) {
   .about {
@@ -17,22 +22,38 @@
     margin-bottom: 0px;
   }
 }
-@media screen and (max-width: 768px) {
-  .about {
-    min-height: calc(100vh - 303px);
-  }
+.about__img {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
 }
-.about__text__collapse {
-  padding-left: 110px;
-  padding-right: 110px;
-  margin-top: 50px;
+.about__img__portrait {
+  width: 270px;
+  border-radius: 5px;
 }
-@media screen and (max-width: 1000px) {
-  .about__text__collapse {
-    padding: 0;
-    margin-top: 20px;
-  }
+.about__img__trio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-.about__portrait {
-  max-width: 400px;
+.about__img__react {
+  height: 150px;
+}
+
+.sup {
+  background-color: #F6F6F6;
+  border-radius: 5px;
+  padding: 20px;
+}
+.sup__ul {
+  list-style: none;
+  padding-top: 10px;
+}
+
+.etudes {
+  margin-top: 35px;
+}
+
+.icone-trio {
+  height: 90px;
 }

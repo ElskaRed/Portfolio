@@ -13,7 +13,7 @@
         padding: 10px 20px 10px 15px;
         background-color: $gold;
         border-radius: 5px;
-        color: white;
+        color: black;
         z-index: 1;
 
         &__title {
@@ -22,6 +22,7 @@
 
         &__arrow {
             cursor: pointer;
+            height: 35px;
             transform: rotate(0deg);
             transition: transform 0.4s ease-in-out; //Animation de transform pour remettre la flèche à l'endroit
         }
@@ -33,7 +34,7 @@
     }
 
     &__bottom {
-        background-color: #F6F6F6;
+        background-color: $grey;
         padding-right: 20px;
         padding-left: 20px;
         padding-bottom: 20px;
@@ -59,7 +60,7 @@
         }
 
         &__text {
-            color: $gold;
+            color: black;
             font-size: 1.1em;
             font-weight: 400;
             line-height: 142.6%;

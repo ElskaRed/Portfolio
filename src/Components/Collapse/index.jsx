@@ -1,6 +1,6 @@
 import './collapse.scss';
 import { useState } from "react";
-import arrow from '../../assets/images/arrow-up.svg';
+import arrow from '../../assets/images/arrow-down.png';
 
 //Composant Collapse appelé sur la page à propos et sur la page FicheLogement
 
