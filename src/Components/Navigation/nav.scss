@@ -2,24 +2,22 @@
 
 .navigation {
     display: flex;
-    gap: 57px;
+    gap: 40px;
     
-    &--home,
-    &--about {
-        color: $orange;
+    &__link {
+        color: whitesmoke;
         text-decoration: none;
-        font-size: 1.5em;
+        font-size: 1.2em;
 
         &.active {
-            text-decoration: underline;
+            color: $gold;
         }
     }
 
     @media screen and (max-width: $bp) {
         gap: 26px;
 
-        &--home,
-        &--about {
+        &__link {
             font-size: 0.75em;
         }
     }

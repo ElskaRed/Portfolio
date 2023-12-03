@@ -4,7 +4,7 @@
   gap: 139px;
   align-items: center;
   padding: 139px 0px;
-  color: #FF6060;
+  color: #Fae4bd;
 }
 .error__h1 {
   font-size: 18em;
@@ -15,7 +15,7 @@
 }
 .error__retour {
   font-size: 1.12em;
-  color: #FF6060;
+  color: #Fae4bd;
 }
 @media screen and (max-width: 768px) {
   .error {
@@ -32,4 +32,4 @@
   .error__retour {
     font-size: 0.8em;
   }
-}/*# sourceMappingURL=error.css.map */
+}

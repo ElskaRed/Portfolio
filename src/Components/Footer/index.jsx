@@ -1,13 +1,22 @@
-import logo from '../../assets/images/logo.png'
-import './footer.scss'
-
-//Footer directement placé dans le layer de l'application, dans le composant App.
+import logo from '../../assets/images/logo.png';
+import './footer.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
     return(
         <div className="footer">
-            <img src={logo} alt="logo Kasa" className="footer__logo"/>
-            <p className="footer__text">© 2020 Kasa. All rights reserved</p>
+            <button className="footer__mail" onClick={() => window.location = 'mailto:vignon.roxanne@gmail.com'}>Contact</button>
+            <img src={logo} alt="logo Elska" className="footer__logo"/>
+            <div className="footer__liens">
+                <a href="https://github.com/ElskaRed" target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon size="xl" icon={faGithub} style={{ color: "#ffffff" }} />
+                </a>
+                <a href="https://www.linkedin.com/in/roxanne-vignon-94438a289" target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faLinkedin} size="xl" style={{ color: "#ffffff" }} />
+                </a>
+            </div>
         </div>
     );
 };

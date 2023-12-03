@@ -2,6 +2,9 @@
 
 .fiche {
     @include wrapper(15px);
+    &__img {
+        max-width: 1000px;
+    }
 
     &__details {
         width: 100%;
@@ -21,12 +24,12 @@
 
         &__title {
             font-size: 2.25em;
-            color: $orange;
+            color: $gold;
         }
 
         &__location {
             font-size: 1.1em;
-            color: $orange;
+            color: $gold;
         }
 
         &__tags {
@@ -44,7 +47,7 @@
 }
 
 .tag {
-    background-color: $orange;
+    background-color: $gold;
     border-radius: 10px;
     padding: 3px 30px;
     font-size: 0.9em;

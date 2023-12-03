@@ -2,18 +2,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 45px 100px 0px 100px;
+  padding: 20px 40px;
   margin: 0 auto;
-  max-width: 1440px;
 }
 .header__logo {
-  width: 210px;
+  width: 70px;
 }
 @media screen and (max-width: 768px) {
   .header {
     padding: 20px;
   }
   .header__logo {
-    width: 145px;
+    width: 30px;
   }
-}/*# sourceMappingURL=header.css.map */
+}

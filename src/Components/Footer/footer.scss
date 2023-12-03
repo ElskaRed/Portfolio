@@ -1,28 +1,33 @@
 @import '../../style/var.scss';
 
 .footer {
-    @include flex(column, 28px);
+    display: flex;
+    justify-content: space-between;
     background-color: black;
     align-items: center;
-    padding: 60px 0px 30px 0px;
-    height: 209px;
+    padding: 20px 40px;
 
     &__logo {
-        width: 122px;
+        width: 60px;
     }
 
-    &__text {
+    &__liens {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
         color: white;
-        font-size: 1.5em;
+    }
+
+    &__mail {
+        border: none;
+        text-decoration: none;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
     }
 
     @media screen and (max-width: $bp) {
-        gap: 15px;    
 
-        &__text {
-            font-size: 0.75em;
-            width: 133px;
-            text-align: center;  
-        }
     }
 }

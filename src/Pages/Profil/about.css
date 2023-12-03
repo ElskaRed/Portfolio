@@ -1,7 +1,6 @@
 .about {
   max-width: 1440px;
   margin: auto;
-  margin-top: 40px;
   margin-bottom: 40px;
   display: flex;
   flex-direction: column;
@@ -23,14 +22,17 @@
     min-height: calc(100vh - 303px);
   }
 }
-.about__collapse {
+.about__text__collapse {
   padding-left: 110px;
   padding-right: 110px;
   margin-top: 50px;
 }
 @media screen and (max-width: 1000px) {
-  .about__collapse {
+  .about__text__collapse {
     padding: 0;
     margin-top: 20px;
   }
-}/*# sourceMappingURL=about.css.map */
+}
+.about__portrait {
+  max-width: 400px;
+}

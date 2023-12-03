@@ -4,7 +4,7 @@
     @include flex(column, 139px);
     align-items: center;
     padding: 139px 0px;
-    color: $orange;
+    color: $gold;
 
     &__h1 {
         font-size: 18em;
@@ -18,7 +18,7 @@
 
     &__retour {
         font-size: 1.12em;
-        color: $orange;
+        color: $gold;
     }
 
     @media screen and (max-width: $bp) {

@@ -8,7 +8,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px 10px 15px;
-  background-color: #FF6060;
+  background-color: #Fae4bd;
   border-radius: 5px;
   color: white;
   z-index: 1;
@@ -47,7 +47,7 @@
   transition: max-height 1.7s, padding-top 0.4s;
 }
 .collapse__bottom__text {
-  color: #FF6060;
+  color: #Fae4bd;
   font-size: 1.1em;
   font-weight: 400;
   line-height: 142.6%;
@@ -79,4 +79,4 @@
   .medium {
     font-size: 0.8em;
   }
-}/*# sourceMappingURL=collapse.css.map */
+}
