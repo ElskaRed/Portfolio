@@ -3,7 +3,10 @@
 .fiche {
     @include wrapper(15px);
     &__img {
-        max-width: 1000px;
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        
     }
 
     &__details {
@@ -19,29 +22,31 @@
     justify-content: space-between;
     align-items: flex-start;
 
-    &__lieu {
+    &__projet {
         @include flex(column, 5px);
 
         &__title {
-            font-size: 2.25em;
-            color: $gold;
-        }
-
-        &__location {
-            font-size: 1.1em;
+            font-size: 2.9em;
             color: $gold;
         }
 
         &__tags {
             @include flex(row, 10px);
-            color: white;
             margin-top: 20px;
         }
     }
 
-    &__bonus {
-        @include flex(column, 15px);
+    &__liens {
+        @include flex(row, 15px);
         align-items: flex-end;
+
+        &__git {
+            @include git;
+        }
+
+        &__demo {
+            @include demo;
+        }
     }
 
 }
@@ -58,8 +63,6 @@
 }
 
 .equiplist {
-    list-style: none;
-
     &__line {
         font-weight: 400;
     }
@@ -76,14 +79,10 @@
         gap: 15px;
         margin-bottom: 18px;
 
-        &__lieu {
+        &__projet {
             gap: 12px; 
             &__title {
                 font-size: 1.1em;
-            }
-
-            &__location {
-                font-size: 0.8em;
             }
 
             &__tags {
@@ -94,7 +93,7 @@
             }
         }
 
-        &__bonus {
+        &__liens {
             flex-direction: row-reverse;
             justify-content: space-between;
             align-items: center;

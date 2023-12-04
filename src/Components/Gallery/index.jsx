@@ -29,9 +29,15 @@ const Gallery = () => {
                     <Link key={projet.id} to={`/project/${projet.id}`}>
                         <Card image={projectImages[index]} title={projet.title} text={projet.bref}/>
                     </Link>
-                    <a href={projet.git} className="card__git">
-                        <FontAwesomeIcon size="2xl" icon={faGithub} style={{ color: "#ffffff" }} />
-                    </a>
+                    <div className='card__liens'>
+                        {projet.demo && (
+                            <a href={projet.demo} className="card__liens__demo">Demo</a>
+                        )}
+                        <a href={projet.git} className="card__liens__git">
+                            <FontAwesomeIcon size="2xl" icon={faGithub} style={{ color: "#ffffff" }} />
+                        </a>
+                    </div>
+
                 </div>
             ))}
         </div>

@@ -9,6 +9,9 @@ import kasaImg from '../../assets/images/kasa-banner.webp';
 import ninaImg from '../../assets/images/nina-banner.webp';
 import bankImg from '../../assets/images/bank-banner.webp';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+
 const FicheProjet = () => {
     const { id } = useParams();
     const ficheProjet = DataProjets.find((projet) => projet.id === id);
@@ -44,13 +47,21 @@ const FicheProjet = () => {
             <img src={projectImage} alt="Projet" className="fiche__img"/>
             <section className="fiche__details">
                 <div className="infos">
-                    <div className="infos__lieu">
-                        <h1 className="infos__lieu__title">{ficheProjet?.title}</h1>
-                        <div className="infos__lieu__tags">
+                    <div className="infos__projet">
+                        <h1 className="infos__projet__title">{ficheProjet?.title}</h1>
+                        <div className="infos__projet__tags">
                             {ficheProjet?.tags.map((tag, index) => (
                                     <p key={index} className="tag">{tag}</p>
                             ))}
                         </div>
+                    </div>
+                    <div className='infos__liens'>
+                        {ficheProjet.demo && (
+                            <a href={ficheProjet.demo} className="infos__liens__demo">Demo</a>
+                        )}
+                        <a href={ficheProjet.git} className="infos__liens__git">
+                            <FontAwesomeIcon size="2xl" icon={faGithub} style={{ color: "#ffffff" }} />
+                        </a>
                     </div>
                 </div>
                 <div className="collapses">
