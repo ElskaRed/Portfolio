@@ -23,11 +23,11 @@
 
     &__git {
         position: absolute;
-        bottom: 20px;
-        left: 50%;
-        transform: translate(-50%);
-        border: solid 2px white;
+        right: 15px;
+        top: 15px;
+        right: 15px;
+        border: solid 3px $gold;
         border-radius: 50%;
-        padding: 3px;
+        padding: 4px;
     }
 }
