@@ -1,9 +1,14 @@
-# Projet n°8 - Créez une application web de location immobilière avec React
+# Portfolio de développeur Vignon Roxanne
 
-Refonte du site de l'entreprise Kasa.
+Présentation, galerie de projets, pages de projets, accès au CV
 
 ## Spécifications techniques
 
 Développement sur React, avec Create React App et React Router.
 Style avec Sass.
 Pas de librairie externe.
+Pas de backend.
+Icones provenant de fontawesome.
+
+npm install
+npm start
