@@ -80,7 +80,7 @@
         }
     }
 
-    @media screen and (max-width: $bp) {
+    @media screen and (max-width: $bptab) {
         &__top {
             padding: 10px;
 
@@ -100,7 +100,7 @@
 //Class spécifiquement utilisée dans la page FicheLogement car les font-size diffèrent dans cette condition précise, indépendamment de la taille de l'écran.
 .medium {
     font-size: 1.1em;
-    @media screen and (max-width: $bp) {
+    @media screen and (max-width: $bptab) {
         font-size: 0.8em;
     }
 }

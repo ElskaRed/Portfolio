@@ -1,6 +1,6 @@
 import './about.scss';
 import Collapse from '../../Components/Collapse';
-import profil from '../../assets/images/Profil.jpg';
+import profil from '../../assets/images/Profil.webp';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHtml5 } from '@fortawesome/free-brands-svg-icons';
 import { faCss3Alt } from '@fortawesome/free-brands-svg-icons';

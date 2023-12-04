@@ -21,9 +21,10 @@
         color: $gold;
     }
 
-    @media screen and (max-width: $bp) {
+    @media screen and (max-width: $bptab) {
         gap: 113px;
         padding: 113px 30px;
+        height: $calc;
 
         &__h1 {
             font-size: 6em;

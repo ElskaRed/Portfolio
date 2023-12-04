@@ -10,5 +10,5 @@ Pas de librairie externe.
 Pas de backend.
 Icones provenant de fontawesome.
 
-npm install
+npm install;
 npm start

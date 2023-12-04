@@ -5,17 +5,18 @@
 .gallery {
     border-radius: 25px;
     width: 100%;
-    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);    padding: 50px;
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);    
+    padding: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
     justify-content: center;
 
-    @media screen and (max-width: $bp) {
-        @include flex(column, 20px);
-        padding: 0;
+    @media screen and (max-width: $bpgal) {
+        grid-gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 30px;
         margin-top: 22px;
-        background-color: white;
         margin-bottom: 20px;
     }
 }

@@ -7,8 +7,8 @@
     position: relative;
     width: auto;
 
-    @media screen and (max-width: $bp) {
-        height: 255px;    
+    @media screen and (max-width: $bpgal) {
+        height: 350px;    
     }
 
     &__img {

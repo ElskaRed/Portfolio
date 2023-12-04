@@ -11,7 +11,7 @@
         width: 70px;
     }
      
-    @media screen and (max-width: $bp) {
+    @media screen and (max-width: $bptab) {
         padding: 20px;  
         
         &__logo {

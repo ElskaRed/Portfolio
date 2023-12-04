@@ -1,6 +1,8 @@
 $gold: #Fae4bd;
-$bp: 768px;
+$bpgal: 1140px;
+$bptab: 920px;
 $grad: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+$calc: calc(100vh - 153px);
 
 @mixin git {
     border: solid 3px $gold;
@@ -37,7 +39,7 @@ $grad: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
     align-items: center;
     padding-left: 100px;
     padding-right: 100px;
-    @media screen and (max-width: $bp) {
+    @media screen and (max-width: $bptab) {
         padding-left: 20px;
         padding-right: 20px;
         margin-top: 7px;
@@ -49,7 +51,7 @@ $grad: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
     height: 223px;
     width: 100%;
     position: relative;
-    @media screen and (max-width: $bp) {
+    @media screen and (max-width: $bptab) {
         height: 111px;
     }
 }

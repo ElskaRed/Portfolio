@@ -28,6 +28,10 @@
             height: 150px;
         }
     }
+    @media screen and (max-width: $bptab) {
+        min-height: $calc;
+        padding-bottom: 40px;
+    }
 }
 
 .sup {
