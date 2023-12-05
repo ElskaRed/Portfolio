@@ -15,9 +15,13 @@ body {
    background-size: contain;
 
    @media screen and (max-width: $bptab) {
-    background-image: url(../assets/images/background-tablette.webp);
-    background-size: cover;
+        background-image: url(../assets/images/background-tablette.webp);
+        background-size: cover;
+    }
+
+    @media screen and (max-width: $bpmob) {
+        background-image: url(../assets/images/background-mobile.webp);
+        background-size: cover;
+    }   
 }
-   
-}   
 

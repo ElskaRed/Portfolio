@@ -19,6 +19,13 @@
         margin-top: 22px;
         margin-bottom: 20px;
     }
+
+    @media screen and (max-width: $bpmob) {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
 }
 
 .card {

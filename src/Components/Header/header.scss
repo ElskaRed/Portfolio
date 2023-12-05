@@ -19,4 +19,16 @@
         }
     }
 
+    @media screen and (max-width: $bpmob) {
+        flex-direction: column;
+        gap: 15px;
+
+        padding: 20px 10px;
+
+        &__logo {
+            width: 60px;
+        }
+
+    }
+
 }

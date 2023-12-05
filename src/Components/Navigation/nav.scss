@@ -21,4 +21,14 @@
             font-size: 0.75em;
         }
     }
+
+    @media screen and (max-width: $bpmob) {
+
+        &__link {
+            &.active {
+                border-bottom: solid 1px $gold;
+            }
+            
+        }
+    }
 }
