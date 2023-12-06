@@ -2,7 +2,7 @@
   max-width: 1440px;
   margin: auto;
   margin-top: 20px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,8 +13,9 @@
   justify-content: center;
   gap: 20%;
   align-items: center;
+  min-height: calc(100vh - 153px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 920px) {
   .home {
     padding-left: 20px;
     padding-right: 20px;
@@ -31,6 +32,7 @@
 }
 .home__intro__name {
   font-size: 3em;
+  text-align: center;
 }
 .home__intro__sub {
   font-size: 1.2em;
@@ -43,3 +45,19 @@
   box-shadow: 0px 0px 50px 11px rgba(0, 0, 0, 0.85);
   border-radius: 10px;
 }
+@media screen and (max-width: 920px) {
+  .home {
+    flex-direction: column;
+    gap: 100px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .home {
+    gap: 30px;
+  }
+  .home__portrait {
+    margin: 50px 0px;
+    width: 70%;
+    height: auto;
+  }
+}/*# sourceMappingURL=home.css.map */

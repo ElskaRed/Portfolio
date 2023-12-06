@@ -1,7 +1,7 @@
 @import '../../style/var.scss';
 
 .home {
-    @include wrapper(40px);
+    @include wrapper(40px, 1920px);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -23,6 +23,7 @@
 
         &__sub {
             font-size: 1.2em;
+            text-align: center;
         }
 
         &__logo {
@@ -35,20 +36,45 @@
         -webkit-box-shadow: 0px 0px 50px 11px rgba(0,0,0,0.85); 
         box-shadow: 0px 0px 50px 11px rgba(0,0,0,0.85);
         border-radius: 10px;
+        margin: 0px 0px 50px 0px;
     }
 
     @media screen and (max-width: $bptab) {
         flex-direction: column;
-        gap: 100px;
+        gap: 70px;
+        min-height: $calctab;
     }
 
     @media screen and (max-width: $bpmob) {
         gap: 30px;
 
         &__portrait {
-            margin: 50px 0px;
             width: 70%;
             height: auto;
+        }
+    }
+
+    @media screen and (min-width: 1441px) {
+        gap: 15%;
+
+        &__intro {
+            gap: 70px;
+
+            &__name {
+                font-size: 4.5em;
+            }
+
+            &__sub {
+                font-size: 1.9em;
+            }
+
+            &__logo {
+                height: 150px;
+            }
+        }
+
+        &__portrait {
+            width: 330px;
         }
     }
 }

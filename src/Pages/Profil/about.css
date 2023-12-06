@@ -14,7 +14,7 @@
   gap: 70px;
   align-items: flex-start;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 920px) {
   .about {
     padding-left: 20px;
     padding-right: 20px;
@@ -39,9 +39,21 @@
 .about__img__react {
   height: 150px;
 }
+@media screen and (max-width: 920px) {
+  .about {
+    min-height: calc(100vh - 153px);
+    padding-bottom: 40px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 .sup {
-  background-color: #F6F6F6;
+  background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
   border-radius: 5px;
   padding: 20px;
 }
@@ -56,4 +68,4 @@
 
 .icone-trio {
   height: 90px;
-}
+}/*# sourceMappingURL=about.css.map */

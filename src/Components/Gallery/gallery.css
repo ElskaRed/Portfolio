@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,600;0,700;0,800;1,700;1,800&display=swap");
 .gallery {
   border-radius: 25px;
   width: 100%;
@@ -8,27 +9,49 @@
   grid-gap: 50px;
   justify-content: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1140px) {
+  .gallery {
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px;
+    margin-top: 22px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 420px) {
   .gallery {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 0;
-    margin-top: 22px;
-    background-color: white;
-    margin-bottom: 20px;
+    gap: 30px;
+    align-items: center;
   }
 }
 
 .card {
   position: relative;
 }
-.card__git {
+.card__liens {
   position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translate(-50%);
-  border: solid 2px white;
-  border-radius: 50%;
-  padding: 3px;
+  right: 15px;
+  top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
 }
+.card__liens__git {
+  border: solid 3px #Fae4bd;
+  border-radius: 50%;
+  padding: 4px;
+}
+.card__liens__demo {
+  text-decoration: none;
+  color: white;
+  border: solid 3px #Fae4bd;
+  padding: 8px 10px;
+  border-radius: 20px;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
+}/*# sourceMappingURL=gallery.css.map */

@@ -10,7 +10,7 @@
 .navigation__link.active {
   color: #Fae4bd;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 920px) {
   .navigation {
     gap: 26px;
   }
@@ -18,3 +18,8 @@
     font-size: 0.75em;
   }
 }
+@media screen and (max-width: 420px) {
+  .navigation__link.active {
+    border-bottom: solid 1px #Fae4bd;
+  }
+}/*# sourceMappingURL=nav.css.map */
