@@ -27,7 +27,7 @@
   transition: transform 0.4s ease-in-out;
 }
 .collapse__bottom {
-  background-color: #F6F6F6;
+  background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
   padding-right: 20px;
   padding-left: 20px;
   padding-bottom: 20px;
@@ -61,7 +61,7 @@
   transition: transform 0.6s, opacity 0.2s;
   opacity: 1;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 920px) {
   .collapse__top {
     padding: 10px;
   }
@@ -76,8 +76,8 @@
 .medium {
   font-size: 1.1em;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 920px) {
   .medium {
     font-size: 0.8em;
   }
-}
+}/*# sourceMappingURL=collapse.css.map */

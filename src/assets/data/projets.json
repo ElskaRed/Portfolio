@@ -4,7 +4,7 @@
 		"title": "Ohmyfood",
 		"bref": "Développer une interface agrémentée d'animations",
 		"description": "Projet fictif : Développer l’interface d’une application qui regroupe des menus de restaurants.",
-		"focus": "Focus sur les animations et le mobile-first.",
+		"focus": "L'enjeu de ce projet n'était pas juste de développer une interface responsive mais de l'agrémenter avec des animations CSS nécessitant notamment plusieurs animations combinées.",
 		"tags": [
 			"Animations Scss",
 			"Mobile-first"
@@ -17,8 +17,8 @@
 		"id": "b9123946",
 		"title": "Portfolio Sophie Bluel",
 		"bref": "Gérer l'affichage dynamique grâce aux requêtes à une API",
-		"description": "Projet fictif : Développer l’interface d’un site web dynamique avec appels à une API pour afficher les données.",
-		"focus": "Focus sur JavaScript et les requêtes à une API.",
+		"description": "Projet fictif : Développer l’interface d’un site web portfolio d'une architecte d'intérieur",
+		"focus": "L'enjeu de ce projet était de développer des fonctionnalités en JavaScript et de gérer les requêtes à une API pour afficher dynamiquement les projets de l'architecte. Il fallait aussi faire en sorte qu'elle puisse se connecter en tant qu'administrateur et ajouter/supprimer des projets.",
 		"tags": [
 			"JavaScript",
 			"Requêtes API"
@@ -31,7 +31,7 @@
 		"title": "Kasa",
 		"bref": "Développer une application avec React",
 		"description": "Projet fictif : Développer l’interface d’une application web d’agence immobilière.",
-		"focus": "Focus sur React.",
+		"focus": "Premier projet react, l'enjeu ici était de comprendre et d'utiliser les props et différents hooks afin de gérer les différents composants de l'application.",
 		"tags": [
 			"React",
 			"JSX"
@@ -44,7 +44,7 @@
 		"title": "Portfolio Nina Carducci",
 		"bref": "Optimiser les performances, l'accessibilité et le SEO d'un site",
 		"description": "Projet fictif : Optimiser les performances et le référencement d’un portfolio de photographe.",
-		"focus": "Focus : Optimisation, accessibilité, SEO et référencement local.",
+		"focus": "L'enjeu de ce projet était d'optimiser un site en réalisant un audit avec Google Lighthouse. Il fallait que les performances, l'accessibilité et le SEO soient au vert.",
 		"tags": [
 			"Optimisation",
 			"Google lighthouse",
@@ -61,7 +61,7 @@
 		"title": "Application ArgentBank",
 		"bref": "Gérer le state d'une application avec Redux",
 		"description": "Projet fictif : Développer l’interface d’une application bancaire avec React.",
-		"focus": "Focus : Utilisation de Redux pour gérer l’état de l’application.",
+		"focus": "Ce projet se concentre essentiellement sur l'utilisation de Redux afin de gérer le state de l'application, mais il utilise également des requêtes à une API pour gérer les connexions utilisateurs.",
 		"tags": [
 			"React",
 			"Redux"

@@ -1,9 +1,10 @@
 $gold: #Fae4bd;
 $bpgal: 1140px;
-$bptab: 920px;
-$bpmob: 420px;
+$bptab: 1025px;
+$bpmob: 540px;
 $grad: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
-$calc: calc(100vh - 153px);
+$calc: calc(100vh - 250px);
+$calctab: calc(100vh - 160px);
 
 @mixin git {
     border: solid 3px $gold;
@@ -30,8 +31,8 @@ $calc: calc(100vh - 153px);
     z-index: 0;
 }
 
-@mixin wrapper($bottom) {
-    max-width: 1440px;
+@mixin wrapper($bottom, $max) {
+    max-width: $max;
     margin: auto;
     margin-top: 20px;
     margin-bottom: $bottom;

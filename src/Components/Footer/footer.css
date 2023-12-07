@@ -3,7 +3,7 @@
   justify-content: space-between;
   background-color: black;
   align-items: center;
-  padding: 20px 40px;
+  padding: 10px 40px;
 }
 .footer__logo {
   width: 60px;
@@ -21,4 +21,4 @@
   background-color: transparent;
   color: white;
   cursor: pointer;
-}
+}/*# sourceMappingURL=footer.css.map */

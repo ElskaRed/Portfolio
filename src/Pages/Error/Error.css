@@ -17,10 +17,11 @@
   font-size: 1.12em;
   color: #Fae4bd;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 920px) {
   .error {
     gap: 113px;
     padding: 113px 30px;
+    height: calc(100vh - 153px);
   }
   .error__h1 {
     font-size: 6em;
@@ -32,4 +33,4 @@
   .error__retour {
     font-size: 0.8em;
   }
-}
+}/*# sourceMappingURL=Error.css.map */
