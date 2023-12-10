@@ -25,7 +25,7 @@ const About = () => {
                     <div className="sup">
                         <h2 className="sup__h">Compétences</h2>
                         <ul className="sup__ul">
-                            <li>- Langages : Trio HTML5/CSS3(dont scss)/Javascript</li>
+                            <li>- Langages : Trio HTML5/CSS3(&scss)/Javascript</li>
                             <li>- Environnement de développement : React</li>
                             <li>- Pratiques annexes : optimisation/débuggage/bonnes pratiques accessibilité/SEO</li>
                         </ul>

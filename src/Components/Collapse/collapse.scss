@@ -15,13 +15,13 @@
         border-radius: 5px;
         color: black;
         z-index: 1;
+        cursor: pointer;
 
         &__title {
             font-size: 1.5em;
         }
 
         &__arrow {
-            cursor: pointer;
             height: 35px;
             transform: rotate(0deg);
             transition: transform 0.4s ease-in-out; //Animation de transform pour remettre la flèche à l'endroit
@@ -29,7 +29,7 @@
 
         &__arrow.arrow-down {
             transform: rotate(-180deg);
-            transition: transform 0.4s ease-in-out; //Animation de transform pour faire pivoter la flèche vers le bas
+            transition: transform 0.4s ease-in-out; //Animation de transform pour faire pivoter la flèche vers le haut
         }
     }
 

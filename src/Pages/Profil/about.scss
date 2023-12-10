@@ -1,12 +1,15 @@
 @import '../../style/var.scss';
 
 .about {
-    @include wrapper(40px, 1440px);
+    @include wrapper(1440px);
+    padding-top: 40px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 70px;
     align-items: flex-start;
+    min-height: $calc;
 
     &__img {
         display: flex;
@@ -29,12 +32,15 @@
         }
     }
     @media screen and (max-width: $bptab) {
-        min-height: $calc;
         padding-bottom: 40px;
     }
 
     @media screen and (max-width: $bpmob) {
         flex-direction: column;
+        align-items: center;
+    }
+
+    @media screen and (min-width: 1921px) {
         align-items: center;
     }
 

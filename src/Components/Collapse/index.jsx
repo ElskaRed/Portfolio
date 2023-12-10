@@ -12,13 +12,15 @@ const Collapse = (props) => {
 
     return(
         <div className="collapse">
-            <div className="collapse__top">
+            <div 
+                className={`collapse__top ${toggle ? 'top-down' : ''}`}
+                onClick={toggleState}
+            >
                 <h2 className={`collapse__top__title ${props.class}`}>{props.title}</h2>
                 <img
                     className={`collapse__top__arrow ${toggle ? 'arrow-down' : ''}`} //Application d'une autre classe en fonction si le toggle est true pour les besoins de l'animation.
                     src={arrow}
                     alt="flèche"
-                    onClick={toggleState} //On appelle la fonction toggleState en cliquant sur la flèche
                 />
             </div>
             <div className={`collapse__bottom ${toggle ? 'bottom-down' : ''}`}> 

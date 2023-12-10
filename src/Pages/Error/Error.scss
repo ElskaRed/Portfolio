@@ -1,15 +1,15 @@
 @import '../../style/var.scss';
 
 .error {
-    @include flex(column, 139px);
+    @include flex(column, 80px);
     align-items: center;
-    padding: 139px 0px;
+    padding: 50px 0px;
     color: $gold;
+    min-height: $calc;
 
     &__h1 {
-        font-size: 18em;
+        font-size: 14em;
         font-weight: 700;
-
     }
 
     &__h2 {
@@ -24,7 +24,6 @@
     @media screen and (max-width: $bptab) {
         gap: 113px;
         padding: 113px 30px;
-        height: $calc;
 
         &__h1 {
             font-size: 6em;

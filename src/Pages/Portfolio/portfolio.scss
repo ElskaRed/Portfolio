@@ -1,5 +1,14 @@
 @import '../../style/var.scss';
 
 .wrapper-home {
-    @include wrapper(40px, 1440px);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    @include wrapper(1440px);
+    min-height: $calc;
+
+    @media screen and (min-width: 1921px) {
+        display: flex;
+        justify-content: center;
+    }
+
 }

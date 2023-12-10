@@ -1,9 +1,9 @@
 $gold: #Fae4bd;
 $bpgal: 1140px;
-$bptab: 1025px;
+$bptab: 1030px;
 $bpmob: 540px;
 $grad: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
-$calc: calc(100vh - 250px);
+$calc: calc(100vh - 202px);
 $calctab: calc(100vh - 160px);
 
 @mixin git {
@@ -31,11 +31,9 @@ $calctab: calc(100vh - 160px);
     z-index: 0;
 }
 
-@mixin wrapper($bottom, $max) {
+@mixin wrapper($max) {
     max-width: $max;
     margin: auto;
-    margin-top: 20px;
-    margin-bottom: $bottom;
     display: flex;
     flex-direction: column;
     align-items: center;
